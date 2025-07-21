@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tic Tac Toe</h1>
+    
+    <div class="mode-toggle">
+      <button onclick="setMode('player')">2 Players</button>
+      <button onclick="setMode('computer')">Vs Computer</button>
+    </div>
+
+    <div class="scoreboard">
+      <div>X Wins: <span id="xScore">0</span></div>
+      <div>O Wins: <span id="oScore">0</span></div>
+      <div>Draws: <span id="drawScore">0</span></div>
+    </div>
+
+    <div id="board" class="board"></div>
+
+    <div class="status" id="status">Choose mode to start!</div>
+
+    <button id="reset" onclick="resetGame()">Reset</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
