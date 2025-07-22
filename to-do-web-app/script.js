@@ -55,16 +55,16 @@ function renderTasks() {
 }
 
 function playBlastBeforeComplete(id, li) {
-    // Trigger reflow to restart animation if needed
+
     li.classList.remove('blast');
-    void li.offsetWidth; // Force reflow
+    void li.offsetWidth;
 
     li.classList.add('blast');
 
-    // Wait for animation to finish
+
     setTimeout(() => {
         toggleComplete(id);
-    }, 400); // Match animation duration in CSS
+    }, 400);
 }
 
 function toggleComplete(id) {
@@ -91,5 +91,5 @@ function editTask(id) {
     }
 }
 
-// Initial render
+
 renderTasks();
